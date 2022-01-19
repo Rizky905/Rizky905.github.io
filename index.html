@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/styling/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>Document</title>
+    <title>Portofolio</title>
 </head>
 
 <body>
@@ -57,7 +57,7 @@
                         </div>
                         <p data-aos="fade-right" data-aos-offset="100" data-aos-duration="600"
                             data-aos-easing="ease-in-sine" class="role">
-                            Web Programmer
+                            Web Developer
                         </p>
                     </div>
                     <div class="portofolio-image">
@@ -85,13 +85,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"
         integrity="sha512-GgeYbSbIufsTDQLCp/zhWN2AJRddt3w9p942+lOS5emAtvRBGo65t2zq8Svq+CIZIo1V1DgA6kHzQTBCH0HiXQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" type="text/JavaScript"></script>
-    <script src="assets/styling/js/main.js" type="text/JavaScript" defer="defer"></script>
+    <!-- <script src="assets/styling/js/main.js" type="text/JavaScript" defer="defer"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
         type="text/JavaScript"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js" type="text/JavaScript"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                onLeave: function () {
+                    jQuery('.section [data-aos]').removeClass("aos-animate");
+                },
+                onSlideLeave: function () {
+                    jQuery('.slide [data-aos]').removeClass("aos-animate");
+                },
+                afterSlideLoad: function () {
+                    jQuery('.slide.active [data-aos]').addClass("aos-animate");
+                },
+                afterLoad: function () {
+                    jQuery('.section.active [data-aos]').addClass("aos-animate");
+                    //jQuery('.fp-table.active .aos-init').addClass('aos-animate');
+                }
+            })
+        });
     </script>
 
 
