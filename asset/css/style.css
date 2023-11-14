@@ -1,0 +1,76 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .box-header {
+    background-color: #e3f2fd;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 683px 607px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-profile {
+    background-color: #1cd4e5;
+    height: 470px;
+    width: 100%;
+  }
+
+  .head-img {
+    height: 500px;
+    width: 500px;
+  }
+
+  .struktur-profile {
+    background-color: #1cd4e5;
+    height: 650px;
+    width: 100%;
+  }
+
+  .struktur-img {
+    height: 100%;
+    width: 100%;
+  }
+  .news-img {
+    /* height: 400px;
+    width: 587px; */
+    display: block;
+    position: relative;
+    max-height: 400px;
+    height: auto;
+  }
+
+  .footer {
+    margin-top: 50px;
+    left: 0;
+    bottom: 0;
+
+    height: 600px;
+    width: 100%;
+
+    background-color: #1cd4e5;
+    color: white;
+    text-align: center;
+  }
+
+  .copyright {
+    font-size: small;
+    margin-top: 90px;
+    left: 0;
+    bottom: 0;
+  }
+  /* .box-header {
+    background-image: url("https://img.freepik.com/free-vector/illustration-character-civil-servants-indonesia-wearing-work-uniforms_10045-683.jpg");
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 413px 368px;
+  } */
+}
